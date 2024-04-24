@@ -1,0 +1,8 @@
+data.c: In function ‘numeroDiasMes’:
+data.c:98:1: warning: control reaches end of non-void function [-Wreturn-type]
+   98 | }
+      | ^
+main.c: In function ‘main’:
+main.c:5:24: warning: unused variable ‘aux’ [-Wunused-variable]
+    5 |     int ano, mes, dia, aux;
+      |                        ^~~

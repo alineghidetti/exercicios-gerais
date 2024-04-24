@@ -1,0 +1,15 @@
+==49721== Memcheck, a memory error detector
+==49721== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==49721== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==49721== Command: Resultados/Aline/temperature_conversor/prog Resultados/Aline/temperature_conversor/Casos/2
+==49721== Parent PID: 49720
+==49721== 
+==49721== 
+==49721== HEAP SUMMARY:
+==49721==     in use at exit: 0 bytes in 0 blocks
+==49721==   total heap usage: 2 allocs, 2 frees, 8,192 bytes allocated
+==49721== 
+==49721== All heap blocks were freed -- no leaks are possible
+==49721== 
+==49721== For lists of detected and suppressed errors, rerun with: -s
+==49721== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
