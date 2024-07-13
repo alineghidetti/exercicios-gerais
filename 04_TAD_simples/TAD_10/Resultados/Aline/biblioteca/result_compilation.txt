@@ -1,0 +1,4 @@
+biblioteca.c: In function ‘removerLivroDaBiblioteca’:
+biblioteca.c:30:5: warning: statement with no effect [-Wunused-value]
+   30 |     for(i; i<biblioteca.tamanho; i++){
+      |     ^~~

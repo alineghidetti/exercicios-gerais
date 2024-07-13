@@ -1,0 +1,4 @@
+eleicao.c: In function ‘RealizaEleicao’:
+eleicao.c:35:18: warning: unused variable ‘eleitor’ [-Wunused-variable]
+   35 |         tEleitor eleitor;
+      |                  ^~~~~~~

@@ -1,13 +1,8 @@
-#include "jogo.h"
+#include "tabuleiro.h"
 #include <stdio.h>
 
-int main() {
-    tJogo jogo;
-
-    do {
-        jogo = CriaJogo();
-        ComecaJogo(jogo);
-    } while (ContinuaJogo());
-
-    return 0;
+int main(){
+    tTabuleiro tabuleiro;
+    tabuleiro = CriaTabuleiro();
+    ImprimeTabuleiro(tabuleiro);
 }

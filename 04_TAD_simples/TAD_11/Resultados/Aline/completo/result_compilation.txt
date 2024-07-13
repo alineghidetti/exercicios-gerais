@@ -1,0 +1,13 @@
+loja.c: In function ‘CalculaLucro’:
+loja.c:44:5: warning: statement with no effect [-Wunused-value]
+   44 |     for(i; i<loja.totalVendedores; i++){
+      |     ^~~
+loja.c:43:22: warning: unused variable ‘vendedores’ [-Wunused-variable]
+   43 |     float vendido=0, vendedores=0;
+      |                      ^~~~~~~~~~
+loja.c:43:11: warning: unused variable ‘vendido’ [-Wunused-variable]
+   43 |     float vendido=0, vendedores=0;
+      |           ^~~~~~~
+loja.c:42:11: warning: unused variable ‘val’ [-Wunused-variable]
+   42 |     float val;
+      |           ^~~
