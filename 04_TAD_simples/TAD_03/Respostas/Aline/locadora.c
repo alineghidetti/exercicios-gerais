@@ -48,13 +48,15 @@ tLocadora lerCadastroLocadora(tLocadora locadora) {
 tLocadora alugarFilmesLocadora (tLocadora locadora, int* codigos, int quantidadeCodigos){
     int i=0, j=0;
     for(i=0; i<quantidadeCodigos; i++){
-        if(verificarFilmeCadastrado(locadora, codigos[i])){
+        if(verificarFilmeCadastrado(locadora,codigos[i])){
             for(j=0; j<locadora.numFilmes; j++){
-                if(ehMesmoCodigoFilme(locadora.filme[j], codigos[i])){
+                if(ehMesmoCodigoFilme(locadora.filme[j].codigo, codigo)){
                     alugarFilme(locadora.filme[j]);
+                    locadora.lucro+=obterValorFilme(locadora.filme[j]);
                 }
             }
         }
     }
     return locadora;
 }
+

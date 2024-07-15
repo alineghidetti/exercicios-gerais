@@ -1,0 +1,4 @@
+main.c: In function ‘main’:
+main.c:11:9: warning: unused variable ‘acao’ [-Wunused-variable]
+   11 |     int acao = 0;
+      |         ^~~~

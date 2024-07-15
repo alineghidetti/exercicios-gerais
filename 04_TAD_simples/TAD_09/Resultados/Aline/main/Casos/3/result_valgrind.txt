@@ -1,0 +1,15 @@
+==84527== Memcheck, a memory error detector
+==84527== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==84527== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==84527== Command: Resultados/Aline/main/prog Resultados/Aline/main/Casos/3
+==84527== Parent PID: 84526
+==84527== 
+==84527== 
+==84527== HEAP SUMMARY:
+==84527==     in use at exit: 0 bytes in 0 blocks
+==84527==   total heap usage: 2 allocs, 2 frees, 8,192 bytes allocated
+==84527== 
+==84527== All heap blocks were freed -- no leaks are possible
+==84527== 
+==84527== For lists of detected and suppressed errors, rerun with: -s
+==84527== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
