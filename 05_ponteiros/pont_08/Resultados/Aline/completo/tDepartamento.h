@@ -25,7 +25,8 @@ typedef struct departamento {
  * @param m3 Nota do terceiro curso (curso3)
  * @param *diretor Ponteiro para string que contém o nome do diretor/chefe do departamento
  */
-tDepartamento CriaDepartamento( char *curso1, char *curso2, char *curso3, char *nome, int m1, int m2, int m3, char *diretor );
+tDepartamento CriaDepartamento( char *curso1, char *curso2, char *curso3,
+                                char *nome, int m1, int m2, int m3, char *diretor );
 
 /**
  * @brief Imprime os atributos de um departamento em tela
