@@ -1,6 +1,10 @@
 # Prerequisites
 *.d
 *.o
+*.vscode
+*.csv
+*.txt
+*.sh
 # Object files
 *.ko
 *.obj
