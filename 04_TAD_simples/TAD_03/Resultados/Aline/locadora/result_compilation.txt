@@ -1,0 +1,69 @@
+locadora.c: In function ‘cadastrarFilmeLocadora’:
+locadora.c:23:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   23 |         printf("Filme ja cadastrado no estoque\n");
+      |         ^~~~~~
+locadora.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    1 | #include "locadora.h"
+  +++ |+#include <stdio.h>
+    2 | 
+locadora.c:23:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   23 |         printf("Filme ja cadastrado no estoque\n");
+      |         ^~~~~~
+locadora.c:23:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+locadora.c:28:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   28 |         printf("Filme cadastrado %d - %s\n", filme.codigo, filme.nome);
+      |         ^~~~~~
+locadora.c:28:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+locadora.c: In function ‘lerCadastroLocadora’:
+locadora.c:36:11: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   36 |     while(scanf("%d,", &codigo) == 1) {
+      |           ^~~~~
+locadora.c:36:11: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+locadora.c:36:11: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+locadora.c:36:11: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+locadora.c: In function ‘alugarFilmesLocadora’:
+locadora.c:60:21: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   60 |                     printf("Filme %d - ", obterCodigoFilme(locadora.filme[j]));
+      |                     ^~~~~~
+locadora.c:60:21: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+locadora.c:69:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   69 |         printf("Filme %d nao cadastrado.\n", codigos[i]);
+      |         ^~~~~~
+locadora.c:69:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+locadora.c:72:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   72 |         printf("Total de filmes alugados: %d com custo de R$%d\n", alugados, custo);
+      |         ^~~~~~
+locadora.c:72:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+locadora.c: In function ‘lerAluguelLocadora’:
+locadora.c:83:11: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   83 |     while(scanf("%d\n", &codigo) == 1) {
+      |           ^~~~~
+locadora.c:83:11: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+locadora.c: In function ‘devolverFilmesLocadora’:
+locadora.c:105:21: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  105 |                     printf("Filme %d - ", codigos[i]);
+      |                     ^~~~~~
+locadora.c:105:21: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+locadora.c:110:21: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  110 |                     printf("Nao e possivel devolver o filme %d - ", obterCodigoFilme(locadora.filme[j]));
+      |                     ^~~~~~
+locadora.c:110:21: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+locadora.c:118:13: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  118 |             printf("Filme %d nao cadastrado.\n", codigos[i]);
+      |             ^~~~~~
+locadora.c:118:13: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+locadora.c: In function ‘lerDevolucaoLocadora’:
+locadora.c:129:11: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+  129 |     while(scanf("%d\n", &codigo) == 1) {
+      |           ^~~~~
+locadora.c:129:11: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+locadora.c: In function ‘consultarEstoqueLocadora’:
+locadora.c:156:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  156 |     printf("~ESTOQUE~\n");
+      |     ^~~~~~
+locadora.c:156:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+locadora.c: In function ‘consultarLucroLocadora’:
+locadora.c:168:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  168 |         printf("\nLucro total R$%d\n", locadora.lucro);
+      |         ^~~~~~
+locadora.c:168:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’

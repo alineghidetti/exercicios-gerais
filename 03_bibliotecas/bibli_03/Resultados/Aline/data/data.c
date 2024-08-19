@@ -134,24 +134,23 @@ int calculaDiasAteMes(int mes, int ano){
 }
 
 int calculaDiferencaDias(int dia1, int mes1, int ano1, int dia2, int mes2, int ano2){
-    int difAno, difMes, difDia;
-    int resp=0;dias=0, i, j;
+    int resp, difano, difmes, difdia, dias=0, i, j;
     resp = comparaData(dia1, mes1, ano1, dia2, mes2, ano2);
     if(resp == 0){
     	return 0;
     }
     if(resp == 1){
-    	difAno = ano1-ano2;
-    	if(difAno == 0){
-    	    difMes = mes1-mes2;
-    	    if(difMes == 0){
-    	    	difDia = dia1 - dia2;
-    	    	dias = difDia;
+    	difano = ano1-ano2;
+    	if(difano == 0){
+    	    difmes = mes1-mes2;
+    	    if(difmes == 0){
+    	    	difdia = dia1 - dia2;
+    	    	dias = difdia;
     	    }
     	    else{
     	    	dias = dia1;
-    	    	difDia = numeroDiasMes(mes2, ano2) - dia2;
-    	    	dias += difDia;
+    	    	difdia = numeroDiasMes(mes2, ano2) - dia2;
+    	    	dias += difdia;
     	    	for(i=mes2+1; i<mes1; i++){
     	    	    dias += numeroDiasMes(i, ano2);
     	    	}
@@ -163,26 +162,26 @@ int calculaDiferencaDias(int dia1, int mes1, int ano1, int dia2, int mes2, int a
     	    	    dias += numeroDiasMes(i, j);
     	    	}
     	    }
-    	    difDia = calculaDiasAteMes(mes1, ano1);
-    	    dias += difDia;
+    	    difdia = calculaDiasAteMes(mes1, ano1);
+    	    dias += difdia;
     	    dias += dia1;
-    	    difDia = calculaDiasAteMes(mes2, ano2);
-    	    dias -= difDia;
+    	    difdia = calculaDiasAteMes(mes2, ano2);
+    	    dias -= difdia;
     	    dias -= dia2;
     	}
     }
     else if(resp == -1){
-    	difAno = ano2-ano1;
-    	if(difAno == 0){
-    	    difMes = mes2-mes1;
-    	    if(difMes == 0){
-    	    	difDia = dia2 - dia1;
-    	    	dias = difDia;
+    	difano = ano2-ano1;
+    	if(difano == 0){
+    	    difmes = mes2-mes1;
+    	    if(difmes == 0){
+    	    	difdia = dia2 - dia1;
+    	    	dias = difdia;
     	    }
     	    else{
     	    	dias = dia2;
-    	    	difDia = numeroDiasMes(mes1, ano1) - dia1;
-    	    	dias += difDia;
+    	    	difdia = numeroDiasMes(mes1, ano1) - dia1;
+    	    	dias += difdia;
     	    	for(i=mes1+1; i<mes2; i++){
     	    	    dias += numeroDiasMes(i, ano1);
     	    	}
@@ -194,11 +193,11 @@ int calculaDiferencaDias(int dia1, int mes1, int ano1, int dia2, int mes2, int a
     	    	    dias += numeroDiasMes(i, j);
     	    	}
     	    }
-    	    difDia = calculaDiasAteMes(mes2, ano2);
-    	    dias += difDia;
+    	    difdia = calculaDiasAteMes(mes2, ano2);
+    	    dias += difdia;
     	    dias += dia2;
-    	    difDia = calculaDiasAteMes(mes1, ano1);
-    	    dias -= difDia;
+    	    difdia = calculaDiasAteMes(mes1, ano1);
+    	    dias -= difdia;
     	    dias -= dia1;
     	}
     }

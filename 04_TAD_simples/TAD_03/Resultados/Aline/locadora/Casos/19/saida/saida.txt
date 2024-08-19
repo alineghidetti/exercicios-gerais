@@ -13,7 +13,7 @@ Filme cadastrado 25 - Tomb Raider
 
 Total de filmes alugados: 3 com custo de R$22
 
-Filme 26 nao cadastrado.
+Filme 22 nao cadastrado.
 
 Total de filmes alugados: 3 com custo de R$17
 

@@ -1,15 +1,53 @@
-==161632== Memcheck, a memory error detector
-==161632== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
-==161632== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
-==161632== Command: Resultados/Aline/locadora/prog Resultados/Aline/locadora/Casos/12
-==161632== Parent PID: 161631
-==161632== 
-==161632== 
-==161632== HEAP SUMMARY:
-==161632==     in use at exit: 0 bytes in 0 blocks
-==161632==   total heap usage: 2 allocs, 2 frees, 8,192 bytes allocated
-==161632== 
-==161632== All heap blocks were freed -- no leaks are possible
-==161632== 
-==161632== For lists of detected and suppressed errors, rerun with: -s
-==161632== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==225124== Memcheck, a memory error detector
+==225124== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==225124== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==225124== Command: Resultados/Aline/locadora/prog Resultados/Aline/locadora/Casos/12
+==225124== Parent PID: 225123
+==225124== 
+==225124== Conditional jump or move depends on uninitialised value(s)
+==225124==    at 0x508FAD6: __vfprintf_internal (vfprintf-internal.c:1516)
+==225124==    by 0x507979E: printf (printf.c:33)
+==225124==    by 0x109B71: alugarFilmesLocadora (in /home/aline/Documentos/PROG.2/exercicios-prog2/04_TAD_simples/TAD_03/Resultados/Aline/locadora/prog)
+==225124==    by 0x109CB4: lerAluguelLocadora (in /home/aline/Documentos/PROG.2/exercicios-prog2/04_TAD_simples/TAD_03/Resultados/Aline/locadora/prog)
+==225124==    by 0x10A811: main (in /home/aline/Documentos/PROG.2/exercicios-prog2/04_TAD_simples/TAD_03/Resultados/Aline/locadora/prog)
+==225124== 
+==225124== Use of uninitialised value of size 8
+==225124==    at 0x50732EB: _itoa_word (_itoa.c:177)
+==225124==    by 0x508EABD: __vfprintf_internal (vfprintf-internal.c:1516)
+==225124==    by 0x507979E: printf (printf.c:33)
+==225124==    by 0x109B71: alugarFilmesLocadora (in /home/aline/Documentos/PROG.2/exercicios-prog2/04_TAD_simples/TAD_03/Resultados/Aline/locadora/prog)
+==225124==    by 0x109CB4: lerAluguelLocadora (in /home/aline/Documentos/PROG.2/exercicios-prog2/04_TAD_simples/TAD_03/Resultados/Aline/locadora/prog)
+==225124==    by 0x10A811: main (in /home/aline/Documentos/PROG.2/exercicios-prog2/04_TAD_simples/TAD_03/Resultados/Aline/locadora/prog)
+==225124== 
+==225124== Conditional jump or move depends on uninitialised value(s)
+==225124==    at 0x50732FC: _itoa_word (_itoa.c:177)
+==225124==    by 0x508EABD: __vfprintf_internal (vfprintf-internal.c:1516)
+==225124==    by 0x507979E: printf (printf.c:33)
+==225124==    by 0x109B71: alugarFilmesLocadora (in /home/aline/Documentos/PROG.2/exercicios-prog2/04_TAD_simples/TAD_03/Resultados/Aline/locadora/prog)
+==225124==    by 0x109CB4: lerAluguelLocadora (in /home/aline/Documentos/PROG.2/exercicios-prog2/04_TAD_simples/TAD_03/Resultados/Aline/locadora/prog)
+==225124==    by 0x10A811: main (in /home/aline/Documentos/PROG.2/exercicios-prog2/04_TAD_simples/TAD_03/Resultados/Aline/locadora/prog)
+==225124== 
+==225124== Conditional jump or move depends on uninitialised value(s)
+==225124==    at 0x508F5C3: __vfprintf_internal (vfprintf-internal.c:1516)
+==225124==    by 0x507979E: printf (printf.c:33)
+==225124==    by 0x109B71: alugarFilmesLocadora (in /home/aline/Documentos/PROG.2/exercicios-prog2/04_TAD_simples/TAD_03/Resultados/Aline/locadora/prog)
+==225124==    by 0x109CB4: lerAluguelLocadora (in /home/aline/Documentos/PROG.2/exercicios-prog2/04_TAD_simples/TAD_03/Resultados/Aline/locadora/prog)
+==225124==    by 0x10A811: main (in /home/aline/Documentos/PROG.2/exercicios-prog2/04_TAD_simples/TAD_03/Resultados/Aline/locadora/prog)
+==225124== 
+==225124== Conditional jump or move depends on uninitialised value(s)
+==225124==    at 0x508EC05: __vfprintf_internal (vfprintf-internal.c:1516)
+==225124==    by 0x507979E: printf (printf.c:33)
+==225124==    by 0x109B71: alugarFilmesLocadora (in /home/aline/Documentos/PROG.2/exercicios-prog2/04_TAD_simples/TAD_03/Resultados/Aline/locadora/prog)
+==225124==    by 0x109CB4: lerAluguelLocadora (in /home/aline/Documentos/PROG.2/exercicios-prog2/04_TAD_simples/TAD_03/Resultados/Aline/locadora/prog)
+==225124==    by 0x10A811: main (in /home/aline/Documentos/PROG.2/exercicios-prog2/04_TAD_simples/TAD_03/Resultados/Aline/locadora/prog)
+==225124== 
+==225124== 
+==225124== HEAP SUMMARY:
+==225124==     in use at exit: 0 bytes in 0 blocks
+==225124==   total heap usage: 2 allocs, 2 frees, 8,192 bytes allocated
+==225124== 
+==225124== All heap blocks were freed -- no leaks are possible
+==225124== 
+==225124== Use --track-origins=yes to see where uninitialised values come from
+==225124== For lists of detected and suppressed errors, rerun with: -s
+==225124== ERROR SUMMARY: 5 errors from 5 contexts (suppressed: 0 from 0)

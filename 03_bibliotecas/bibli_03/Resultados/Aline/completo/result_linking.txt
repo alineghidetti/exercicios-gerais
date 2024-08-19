@@ -1,8 +1,0 @@
-/usr/bin/ld: Resultados/Aline/completo/main.o: na função "main":
-main.c:(.text+0x6f): referência não definida para "verificaDataValida"
-/usr/bin/ld: main.c:(.text+0x85): referência não definida para "verificaDataValida"
-/usr/bin/ld: main.c:(.text+0xcd): referência não definida para "imprimeDataExtenso"
-/usr/bin/ld: main.c:(.text+0xf3): referência não definida para "imprimeDataExtenso"
-/usr/bin/ld: main.c:(.text+0x113): referência não definida para "comparaData"
-/usr/bin/ld: main.c:(.text+0x179): referência não definida para "calculaDiferencaDias"
-collect2: error: ld returned 1 exit status

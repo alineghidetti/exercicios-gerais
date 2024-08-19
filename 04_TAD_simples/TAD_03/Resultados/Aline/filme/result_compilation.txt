@@ -1,0 +1,36 @@
+filme.c: In function ‘criarFilme’:
+filme.c:5:5: warning: implicit declaration of function ‘strcpy’ [-Wimplicit-function-declaration]
+    5 |     strcpy(filme.nome, nome);
+      |     ^~~~~~
+filme.c:2:1: note: include ‘<string.h>’ or provide a declaration of ‘strcpy’
+    1 | #include "filme.h"
+  +++ |+#include <string.h>
+    2 | 
+filme.c:5:5: warning: incompatible implicit declaration of built-in function ‘strcpy’ [-Wbuiltin-declaration-mismatch]
+    5 |     strcpy(filme.nome, nome);
+      |     ^~~~~~
+filme.c:5:5: note: include ‘<string.h>’ or provide a declaration of ‘strcpy’
+filme.c: In function ‘leFilme’:
+filme.c:18:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   18 |     scanf("%[^,],%d,%d\n", nome, &valor, &quantidade);
+      |     ^~~~~
+filme.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    1 | #include "filme.h"
+  +++ |+#include <stdio.h>
+    2 | 
+filme.c:18:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   18 |     scanf("%[^,],%d,%d\n", nome, &valor, &quantidade);
+      |     ^~~~~
+filme.c:18:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+filme.c: In function ‘imprimirNomeFilme’:
+filme.c:30:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   30 |     printf("%s", filme.nome);
+      |     ^~~~~~
+filme.c:30:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+filme.c:30:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+filme.c:30:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+filme.c: In function ‘compararNomesFilmes’:
+filme.c:62:13: warning: implicit declaration of function ‘strcmp’ [-Wimplicit-function-declaration]
+   62 |     return (strcmp(filme1.nome, filme2.nome));
+      |             ^~~~~~
+filme.c:62:13: note: include ‘<string.h>’ or provide a declaration of ‘strcmp’
