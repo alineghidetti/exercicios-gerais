@@ -1,7 +1,7 @@
 #ifndef _USUARIO_H_
 #define _USUARIO_H_
-
-
+#include <stdio.h>
+#include <stdlib.h>
 typedef struct Usuario {
     char nome[50]; /**< Nome do usuário. */
     char cpf[15]; /**< CPF do usuário. */
