@@ -27,10 +27,8 @@ void LeLesao(tLesao* l){
     scanf("%*c"); 
     scanf("%[^\n\n]", l->diagnostico);
     scanf("%*c");
-
     scanf("%[^\n\n]", l->regiao_corpo);
     scanf("%*c");
-
     scanf("%d", &l->chance_malignidade);
     scanf("%*c");
 
@@ -51,13 +49,7 @@ char* GetIdLesao(tLesao* l){
 
 int PrecisaCirurgiaLesao(tLesao* l) {
     if (l == NULL) {
-        // Se o ponteiro é nulo, não podemos determinar se precisa de cirurgia
         return 0;
     }
-
-    // Defina o limiar de chance de malignidade para cirurgia
-    const int LIMIAR_MALIGNIDADE = 50; // Exemplo de limiar; ajuste conforme necessário
-
-    // Retorna 1 se a chance de malignidade for maior ou igual ao limiar, caso contrário, retorna 0
-    return l->chance_malignidade >= LIMIAR_MALIGNIDADE;
+    return l->chance_malignidade >= 50;
 }

@@ -9,7 +9,7 @@ tData* LeData(){
         printf("Erro ao alocar memória.\n");
         exit(1);
     }
-    scanf("%02d/%02d/%04d", &data->dia, &data->mes, &data->ano);
+    scanf("%02d/%02d/%04d\n", &data->dia, &data->mes, &data->ano);
     return data;
 }
 
